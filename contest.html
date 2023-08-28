@@ -6,11 +6,9 @@
 <!--languige -->
 <html lang="en">
   <head>
-    <title>OUTDOORSY</title>
-    <meta name="description" content="Dont make your 
-    visitors wait any longer" />
+    <link rel="stylesheet" href="styles.css">
     <style>
-       body {
+         body {
 	background: linear-gradient(-45deg, #32fa00, #108b00, #002b06, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -27,26 +25,28 @@
 		background-position: 0% 50%;
 	}
 }
-      #location {
-  background-color: yellow;
-}
       img {
         border-radius: 200px;
         width: 60%
       }
       article {
         color:lightgreen;
-        border-color: black;
+        border-color: lightgreen;
       }
     
-    ol   {color:lightgreen;}
-    ul    {color:lightgreen;}
+    ol   {color: lightgreen;}
+    ul    {color: lightgreen;}
+
+    .prize {
+  color: lightgreen;
+  border: 2px lightgreen;
+  margin: 20px;
+  padding: 20px;
+}
     </style>
     </head>
-    <!--container for meta data-->
+    
 <head>
-  
-  <link rel="stylesheet" href="styles.css">
   <!--title shows on the tab above for the costumor, but more importantly  it is the first 
 line they see when they are searching. if you make it unique and google likes you and will
  make you more popular.-->
@@ -63,7 +63,8 @@ body {
   font-size: 0.8em;
 }
 body {
-background-color: darkolivegreen;}
+background-color: darkolivegreen;
+}
 header, nav, section, article, footer {
   border: 1px solid grey;
   margin: 5px;
@@ -83,85 +84,41 @@ nav ul li {
 </head>
 
 <body>
-  <img
-  src="workplace.jpg"
-  alt="Workplace"
-  usemap="#workmap"
-  width="400"
-  height="379"
-/>
-
-<map name="workmap">
-  <area
-    shape="rect"
-    coords="34,44,270,350"
-    alt="Computer"
-    href="computer.html"
-  />
-  <area
-    shape="rect"
-    coords="290,172,333,250"
-    alt="Phone"
-    href="phone.html"
-  />
-  <area
-    shape="circle"
-    coords="337,300,44"
-    alt="Cup of coffee"
-    href="coffee.html"
-  />
-</map>
   <article>
-  <img src="images/Website logo.psd.jpg" alt="camp">
+  <img src="images/camp.jpg" alt="camp">
   </article>
 <!--header is at the head website-->
 <header>
     <!--this is the biggest one-->
-  <h1>Welcome to Outdoorsy</h1>
+  <h1>Welcome to my Contest page</h1>
 </header>
 <a href="https://thedyrt.com/camping/nevada/near/sparks/" target="_blank">best spots in neveda</a> 
 <nav> |
   <a href="index.html">Home</a> |
-  <a href="products.html">Product</a> |
+  <a href="products.html">Products</a> |
   <a href="contest.html">Contest</a> |
   
 </nav>
-
+<label for="file">contest spending:</label>
+<progress id="file" value="78" max="100"> 32% </progress>
 <article>
-  <h2>Backpacking needs</h2>
+  <h2>Prizes</h2>
 
-  <article>
-    <h2>tents</h2>
-    <p>tents are the base of camping.</p>
-  </article>
-<!--gives independant content-->
-  <article>
-    <h2>backpackes</h2>
-    <p>backpacks are nice for carrying around all your needs on a hike .</p>
-  </article>
-
-  <article>
-    <h2>sleeping bags</h2>
-    <p>a comffy way to sleep and relax</p>
-  </article>
-  <article>
-  <h2>other needs</h2>
-  <ul>
-    <li>pots&pans</li>
-    <li>fire starters</li>
-    <li>proper hiking atire</li>
-  </ul>
-  </article>
-  <article>
-    <h2>Most important for a hike</h2>
-    <ol>
-      <li>gps/map&compass</li>
-      <li>plenty of water</li>
-      <li>proper hiking atire</li>
-    </=ol>
-    <p>friday is a  <span style="color:red;font-weight:bold">free
-    </span> day</p>
-    </article>
+  <div class="prize">
+    <h2>1st place</h2>
+    <p>you will be rewarded with a free item
+       as well as discounts store wide</p>
+    </div> 
+    
+    <div class="prize">
+    <h2>2nd place</h2>
+    <p>you will get a discount on select items throughout the store</p>
+    </div>
+    
+    <div class="prize">
+    <h2>3rd place</h2>
+    <p>you will get small discounts on a small section of the store</p>
+    </div>
 </article>
 <!--https://www.google.com/search?q=camping&tbm=isch&ved=2ahUKEwj2--uU9o_6AhXbmmoFHauGDnQQ2-cCegQIABAA&oq=camping&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIHCAAQsQMQQzIHCAAQsQMQQzIECAAQQzIICAAQg
   AQQsQMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBCxAzoICAAQsQMQgwE6CwgAEIAEELEDEIMBULEGWKksYNs1aABwAHgAgAFUiAGxB5IBAjE3mAEAoAEBqgELZ3dzLXdpei1pbWewAQDAAQE&sclient=img&
@@ -172,19 +129,11 @@ nav ul li {
 <a href="https://www.youtube.com/watch?v=CaAeUhbzdFQ">camping guide</a>
 </body>
 <h3>webmaster:Matthew Latham</h3>
-<h4>Last last Modified</h4>
-<h4 id="lastupdated"></h4>
-<script>
-  const date = new Date(document.lastModified);
-  document.getElementById("lastupdated").innerHTML = date;
-</script>
-
 </html>
-<h6 id="location">we are located in sparks neveda.</h6>
+
 
 
 <!--https://www.youtube.com/watch?v=CaAeUhbzdFQ-->
 
-<!---->
 
 
